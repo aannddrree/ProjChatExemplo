@@ -21,7 +21,7 @@ namespace ProjChatExemplo.Repositories
         public string GetUserId(long id)
         {
             return (from con in connections
-                    where con.Value.key == id
+                    where con.Value.Key == id
                     select con.Key).FirstOrDefault();
         }
 

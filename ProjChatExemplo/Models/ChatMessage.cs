@@ -7,8 +7,8 @@ namespace ProjChatExemplo.Models
 {
     public class ChatMessage
     {
-        public Int64 destination { get; set; }
-        public User sender { get; set; }
-        public string message { get; set; }
+        public Int64 Destination { get; set; }
+        public User Sender { get; set; }
+        public string Message { get; set; }
     }
 }

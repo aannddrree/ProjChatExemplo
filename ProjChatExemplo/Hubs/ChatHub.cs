@@ -35,7 +35,7 @@ namespace ProjChatExemplo.Hubs
         public async Task SendMessage(ChatMessage chat)
         {
             //Ao usar o método Client(_connections.GetUserId(chat.destination)) eu estou enviando a mensagem apenas para o usuário destino, não realizando broadcast
-            await Clients.Client(_connections.GetUserId(chat.destination)).SendAsync("Receive", chat.sender, chat.message);
+            await Clients.Client(_connections.GetUserId(chat.Destination)).SendAsync("Receive", chat.Sender, chat.Message);
         }
     }
 }

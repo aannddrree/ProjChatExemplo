@@ -7,8 +7,8 @@ namespace ProjChatExemplo.Models
 {
     public class User
     {
-        public string name { get; set; }
-        public Int64 key { get; set; }
-        public DateTime dtConnection { get; set; }
+        public string Name { get; set; }
+        public Int64 Key { get; set; }
+        public DateTime DtConnection { get; set; }
     }
 }
